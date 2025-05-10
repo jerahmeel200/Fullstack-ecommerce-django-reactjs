@@ -1,8 +1,13 @@
+import ProductList from "./components/ProductList"
+
  
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+
+      <ProductList/>
+    </div>
   )
 }
 
