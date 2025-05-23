@@ -1,12 +1,11 @@
-import ProductList from "./components/ProductList"
+import Header from "./components/Header"
 
  
 
 const App = () => {
   return (
-    <div>
-
-      <ProductList/>
+    <div className="">
+      {/* <Header/> */}
     </div>
   )
 }
