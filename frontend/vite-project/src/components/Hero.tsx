@@ -23,7 +23,7 @@ const Hero = () => {
         <div>
           <img
             src={iphone}
-            alt="iPhone 14 Series"
+            alt="iPhone 14 Series" 
             className="w-full h-auto max-w-[500px] max-h-[400px] object-cover hidden md:block"
           />
         </div>
