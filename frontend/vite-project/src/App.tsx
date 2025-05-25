@@ -1,3 +1,4 @@
+import Categories from "./components/Categories"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Product from "./components/Product"
@@ -10,6 +11,7 @@ const App = () => {
       <Header/>
       <Hero/>
       <Product/>
+      <Categories/>
     </div>
   )
 }
