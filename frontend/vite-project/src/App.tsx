@@ -1,3 +1,4 @@
+import BestSelling from "./components/BestSelling"
 import Categories from "./components/Categories"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
@@ -12,6 +13,7 @@ const App = () => {
       <Hero/>
       <Product/>
       <Categories/>
+      <BestSelling/>
     </div>
   )
 }

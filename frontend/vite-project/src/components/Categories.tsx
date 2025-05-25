@@ -1,4 +1,3 @@
-import React from 'react'
 import computer from '../assets/computer.svg'
 
 const Categories = () => {
@@ -13,7 +12,7 @@ const Categories = () => {
             {/*  */}
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 items-start sm:items-center">
             <h1 className="text-[36px] sm:text-[24px] font-sans font-semibold">
-              Browse By Category
+              Browse By Categories
             </h1>
              
           </div>
