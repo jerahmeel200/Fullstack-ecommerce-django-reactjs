@@ -2,7 +2,7 @@ import computer from '../assets/computer.svg'
 
 const Categories = () => {
   return (
-     <section className='mt-[80px] sm:mt-[140px]'>
+     <section className='mt-[80px] sm:mt-[140px] hidden md:block'>
         <div className="max-w-full sm:max-w-[1170px] mx-auto px-4 sm:px-0">
         <div className="flex gap-3 items-center mb-[24px]">
           <div className="bg-[#DB4444] w-[20px] h-[40px] rounded-[4px]"></div>
