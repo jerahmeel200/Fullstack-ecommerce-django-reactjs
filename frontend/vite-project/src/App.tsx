@@ -3,6 +3,7 @@ import Categories from "./components/Categories"
 import ExploreProducts from "./components/ExploreProducts"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import NewArrival from "./components/NewArrival"
 import Product from "./components/Product"
 
  
@@ -16,6 +17,8 @@ const App = () => {
       <Categories/>
       <BestSelling/>
       <ExploreProducts/>
+      <NewArrival/>
+      
     </div>
   )
 }
