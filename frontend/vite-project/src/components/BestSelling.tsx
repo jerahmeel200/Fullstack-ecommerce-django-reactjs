@@ -1,5 +1,6 @@
 import pad from "../assets/gamePad.svg";
 import star from "../assets/star.svg";
+import speaker from "../assets/speaker.svg";
 
 
 
@@ -25,7 +26,9 @@ const BestSelling = () => {
     // { id: 12, name: "iPhone 13", price: "$699", image: pad },
   ];
   return (
-     <section className="mt-[80px] sm:mt-[140px]">
+
+    <>
+         <section className="mt-[80px] sm:mt-[140px]">
         <div className="max-w-full sm:max-w-[1170px] mx-auto px-4 sm:px-0">
         <div className="flex gap-3 items-center mb-[24px]">
           <div className="bg-[#DB4444] w-[20px] h-[40px] rounded-[4px]"></div>
@@ -79,6 +82,48 @@ const BestSelling = () => {
         </div>
           </div>
      </section>
+
+
+<section className="mt-[80px] sm:mt-[140px] mb-10">
+<div className="max-w-full sm:max-w-[1170px] mx-auto py-[69px] px-[56px] bg-black text-white flex justify-between items-center">
+<div>
+    <p>Categories</p>
+    <h1 className="font-sans font-semibold text-[48px] w-[443px]">Enhance Your Music Experience</h1>
+    <div className="flex gap-[20px] mt-[20px]">
+        <div className="bg-white rounded-full text-black w-[62px] h-[62px] flex items-center justify-center flex-col">
+            <p className="text-[16px] font-semibold font-sans">23</p>
+            <p className="text-[11px] font-sans">Hours</p>
+        </div>
+        <div className="bg-white rounded-full text-black w-[62px] h-[62px] flex items-center justify-center flex-col">
+            <p className="text-[16px] font-semibold font-sans">23</p>
+            <p className="text-[11px] font-sans">Hours</p>
+        </div>
+        <div className="bg-white rounded-full text-black w-[62px] h-[62px] flex items-center justify-center flex-col">
+            <p className="text-[16px] font-semibold font-sans">23</p>
+            <p className="text-[11px] font-sans">Hours</p>
+        </div>
+        <div className="bg-white rounded-full text-black w-[62px] h-[62px] flex items-center justify-center flex-col">
+            <p className="text-[16px] font-semibold font-sans">23</p>
+            <p className="text-[11px] font-sans">Hours</p>
+        </div>
+        
+        
+    </div>
+
+    <button className="bg-[#00FF66] rounded-[4px] text-[white] py-[16px] px-[48px] mt-[20px]">
+        Buy Now!
+    </button>
+
+</div>
+<div>
+    <img src={speaker} alt="" />
+</div>
+</div>
+</section>
+    </>
+
+
+
   )
 }
 
