@@ -46,7 +46,7 @@ const BestSelling = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full  object-contain"
+                                            className="w-full h-full object-contain"
                                         />
                                     </div>
                                     <button className="cursor-pointer block md:hidden group-hover:flex items-center justify-center text-sm sm:text-base font-sans font-medium py-2 absolute bottom-0 text-center rounded-b-[4px] bg-black text-white w-full transition-all duration-300">
