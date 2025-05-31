@@ -36,6 +36,8 @@ REST_FRAMEWORK = {
     ),
 }
 
+PAYSTACK_SECRET_KEY = 'sk_test_a1f8942ce7d1e77c57949eb4b5f7c5cfd5962f31'
+
 # Application definition
 
 INSTALLED_APPS = [
