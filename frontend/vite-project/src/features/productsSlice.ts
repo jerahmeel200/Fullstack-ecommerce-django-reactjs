@@ -8,7 +8,7 @@ import type { Product } from '../types/product';
 export const fetchProducts = createAsyncThunk(
   'products/fetch',
   async () => {
-    const res = await axios.get<Product[]>('http://localhost:8000/api/products/');
+    const res = await axios.get<Product[]>('http://localhost:8000/api/product/');
     return res.data;
   }
 );

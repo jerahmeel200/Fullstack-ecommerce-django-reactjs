@@ -1,7 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import pad from "../assets/gamePad.svg";
 import star from "../assets/star.svg";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useAppDispatch, useAppSelector } from "../hooks";
+import { fetchProducts } from "../features/productsSlice";
 
 interface Product {
   id: number;
@@ -13,6 +15,14 @@ interface Product {
 const Product = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
+  const dispatch =  useAppDispatch()
+  const products = useAppSelector((state)=> state.products)
+
+  console.log("products", products)
+
+   useEffect(()=>{
+dispatch(fetchProducts())
+   },[dispatch])
   const scroll = (direction: "forward" | "backward") => {
     if (scrollRef.current) {
       const scrollAmount = 400;
@@ -23,16 +33,16 @@ const Product = () => {
     }
   };
 
-  const products: Product[] = [
-    { id: 1, name: "iPhone 14 Pro", price: "$999", image: pad },
-    { id: 2, name: "iPhone 14", price: "$799", image: pad },
-    { id: 56, name: "iPhone 13", price: "$699", image: pad },
-    { id: 67, name: "iPhone 13", price: "$699", image: pad },
-    { id: 37, name: "iPhone 13", price: "$699", image: pad },
-    { id: 55, name: "iPhone 13", price: "$699", image: pad },
-    { id: 22, name: "iPhone 13", price: "$699", image: pad },
-    { id: 12, name: "iPhone 13", price: "$699", image: pad },
-  ];
+  // const products: Product[] = [
+  //   { id: 1, name: "iPhone 14 Pro", price: "$999", image: pad },
+  //   { id: 2, name: "iPhone 14", price: "$799", image: pad },
+  //   { id: 56, name: "iPhone 13", price: "$699", image: pad },
+  //   { id: 67, name: "iPhone 13", price: "$699", image: pad },
+  //   { id: 37, name: "iPhone 13", price: "$699", image: pad },
+  //   { id: 55, name: "iPhone 13", price: "$699", image: pad },
+  //   { id: 22, name: "iPhone 13", price: "$699", image: pad },
+  //   { id: 12, name: "iPhone 13", price: "$699", image: pad },
+  // ];
 
   return (
     <section className="mt-[80px] sm:mt-[140px]">
